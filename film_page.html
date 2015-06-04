@@ -1,0 +1,779 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>KINOBY-Film-page</title>
+    <link href='http://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
+    <link href="css/normalize.css" type="text/css" rel="stylesheet" />
+    <link href="css/film_page_styles.css" type="text/css" rel="stylesheet"/>
+</head>
+<body>
+<div class="wrapper">
+    <header class="header">
+        <div class="logo">
+            <a href="#">
+                <img src="img/logo.png" height="68" width="75" alt="kinoby-logo"/>
+                <h1>KINOBY</h1>
+            </a>
+        </div>
+        <ul class="breadcrumbs">
+            <li><a href="#">Главная</a></li>
+            <li id="active"><a href="#">Ной</a></li>
+        </ul>
+        <ul class="registration">
+            <li><a href="#">вход</a></li>
+            <li><a href="#">регистрация</a></li>
+        </ul>
+    </header>
+    <section class="content-wrapper">
+        <aside>
+            <form class="search" action="#" method="post">
+                <input type="search">
+                <button class="search-button" type="submit"></button>
+            </form>
+            <ul class="sidebar-filter">
+                <li class="active-sidebar-filter"><a href="#">жанры</a></li>
+                <li><a href="#">по алфавиту</a></li>
+                <li><a href="#">по рейтингу</a></li>
+            </ul>
+            <nav class="main-navigation">
+                <ul class="main-navigation-list">
+                    <li><a href="#">Боевик</a></li>
+                    <li><a href="#">Вестерн</a></li>
+                    <li class="nav-active"><a href="#">Военный</a></li>
+                    <li><a href="#">Детектив</a></li>
+                    <li><a href="#">Для взрослых</a></li>
+                    <li><a href="#">Документальный</a></li>
+                    <li><a href="#">Драма</a></li>
+                    <li><a href="#">История</a></li>
+                    <li><a href="#">Комедия</a></li>
+                    <li><a href="#">Мелодрама</a></li>
+                    <li><a href="#">Мультфильм</a></li>
+                    <li><a href="#">Мюзикл</a></li>
+                    <li><a href="#">Приключения</a></li>
+                    <li><a href="#">Семейный</a></li>
+                    <li><a href="#">Сериал</a></li>
+                    <li><a href="#">Спорт</a></li>
+                    <li><a href="#">Триллер</a></li>
+                    <li><a href="#">Ужасы</a></li>
+                    <li><a href="#">Фантастика</a></li>
+                    <li><a href="#">Фентези</a></li>
+                </ul>
+            </nav>
+        </aside>
+        <section class="content">
+            <header class="content-header">
+                <h2>Ной</h2>
+            </header>
+            <section class="video">
+                <div class="videowrapper">
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/m6mUJ65R3bI?start=59" allowfullscreen></iframe>
+                </div>
+            </section>
+            <section class="film-info-and-comments">
+                <section class="film-info">
+                    <div class="main-poster">
+                        <img class="main-poster-img" src="img/main-poster-noi.png" height="369" width="261"
+                        alt="main-poster-noi"/>
+                        <div class="stars-img-wrapper">
+                            <img class="stars-img" src="img/main-poster-2stars.png" height="22" width="143" alt="2stars"/>
+                        </div>
+                        <div class="rating">
+                            <img src="img/main-poster-diagramma-icon.png" height="16" width="19" alt="diagramma-icon"/>
+                            <span>Рейтинг: 2/5 </span>
+                        </div>
+                    </div>
+                    <div class="film-description">
+                        <header class="film-description-header">
+                            <h2>Ной</h2>
+                        </header>
+
+                        <dl>
+                            <dt>Год</dt>
+                            <dd>2013</dd>
+                            <dt>Страна</dt>
+                            <dd>США</dd>
+                            <dt>Режисер</dt>
+                            <dd>Даррен Арановски</dd>
+                            <dt>Продюсер</dt>
+                            <dd>Арнон Милчэн, Скотт Франклин, Мэри Пэрент, Даррен Аронофски</dd>
+                            <dt>Жанр</dt>
+                            <dd>Драма, Фентези</dd>
+                            <dt>Актеры</dt>
+                            <dd class="actors">Рассел Кроу, Эмма Уотсон, Дженнифер Коннелли, Логан Лерман,
+                                Энтони Хопкинс, Ник Нолти, Дуглас Бут, Кевин Дюран, Сами Гэйл,
+                                Бэрри Слоун, Мартон Чокаш, Дакота Гойо, Рэй Уинстон,
+                                Фрэнк Ланджелла, Марк Марголис, Мэдисон Девенпорт,
+                                Финн Уиттрок, Рэймонд Мамрак, Джим Форд, Анна Кучма</dd>
+                        </dl>
+                    </div>
+                    <ul class="film-menu">
+                        <li class="active-film-menu" id="comments-tab" >оставить коментарий</li>
+                        <li id="cadrs-tab">кадры из фильма</li>
+                        <li id="trailer-tab">трейлер</li>
+                        <li id="description-tab">описание</li>
+                    </ul>
+                </section>
+                <section class="comments-wrapper">
+                    <div class="comments">
+                        <header class="tab-div-header">
+                            <span>Всего комментариев: 2</span>
+                        </header>
+                        <div class="comment">
+                            <img class="commentator-photo" src="img/alex-ivanov.png" height="45" width="45"
+                                 alt="alex-ivanov"/>
+                            <p class="commentator-name">Александр Иванов</p>
+                            <span>
+                            <img class="comments-icon-orange" src="img/comments-icon-orange.png" height="15" width="19" alt="comments-icon-orange"/>
+                            Ответить
+                            </span>
+                            <span class="comment-date">14:00 11.02.2014</span>
+                            <p class="comment-text">Lorem Ipsum - это текст-"рыба", часто используемый в печати и вэб-дизайне. Lorem Ipsum является стандартной "рыбой" для текстов на латинице с начала XVI века. В то время некий безымянный печатник создал большую коллекцию размеров и форм шрифтов, используя Lorem Ipsum для распечатки образцов. Lorem Ipsum не только успешно пережил без заметных изменений пять веков, но и перешагнул в электронный дизайн.</p>
+                        </div>
+                        <div class="comment-answer">
+                            <div class="line-to-photo"><img class="comment-answer-icon" src="img/comment-answer-icon.png" height="21" width="21" alt="comment-answer-icon"/></div>
+                            <img class="commentator-photo" src="img/petr-petrov.png" height="45" width="45"
+                                 alt="alex-ivanov"/>
+                            <div class="comment-wrapper">
+                                <p class="commentator-name">Александр Иванов</p>
+                                <span>
+                                <img class="comments-icon-orange" src="img/comments-icon-orange.png" height="15" width="19" alt="comments-icon-orange"/>
+                                Ответить
+                                </span>
+                                <span class="comment-date">14:00 11.02.2014</span>
+                                <p class="comment-text">Lorem Ipsum - это текст-"рыба", часто используемый в печати и вэб-дизайне. Lorem Ipsum является стандартной "рыбой" для текстов на латинице с начала XVI века. В то время некий безымянный печатник создал большую коллекцию размеров и форм шрифтов, используя Lorem Ipsum для распечатки образцов. Lorem Ipsum не только успешно пережил без заметных изменений пять веков, но и перешагнул в электронный дизайн.</p>
+                            </div>
+                        </div>
+                        <div class="comment single">
+                            <img class="commentator-photo" src="img/alex-ivanov.png" height="45" width="45"
+                                 alt="alex-ivanov"/>
+                            <p class="commentator-name">Александр Иванов</p>
+                            <span>
+                            <img class="comments-icon-orange" src="img/comments-icon-orange.png" height="15" width="19" alt="comments-icon-orange"/>
+                            Ответить
+                            </span>
+                            <span class="comment-date">14:00 11.02.2014</span>
+                            <p class="comment-text">Lorem Ipsum - это текст-"рыба", часто используемый в печати и вэб-дизайне. Lorem Ipsum является стандартной "рыбой" для текстов на латинице с начала XVI века. В то время некий безымянный печатник создал большую коллекцию размеров и форм шрифтов, используя Lorem Ipsum для распечатки образцов. Lorem Ipsum не только успешно пережил без заметных изменений пять веков, но и перешагнул в электронный дизайн.</p>
+                        </div>
+                    </div>
+                    <div class="add-cooments">
+                        <header class="add-comments-header">
+                            <h4>добавить коментарий</h4>
+                            <img src="img/comments-icon-white.png" height="15" width="19" alt="comments-icon.png"/>
+                        </header>
+                        <p>Обязательные поля отмечены<span>*</span></p>
+                        <form action="#" method="post">
+                            <input type="text" name="user-name" placeholder="USER"/><span>*</span><img class="user-icon" src="img/user-icon.png" height="12" width="11" alt="user-icon"/>
+                            <input type="email" name="user-email" placeholder="E-MAIL"/><span>*</span><img class="email-icon" src="img/email-icon.png" height="11" width="14" alt="email-icon"/>
+                            <textarea name="comment" placeholder="ТЕКСТ КОММЕНТАРИЯ"></textarea><span class="textaria-star">*</span><img  class="comment-icon" src="img/comment-icon-grey.png" height="11" width="14" alt="comment-icon-grey"/>
+                            <div class="capcha-wrapper">
+                                <input class="capcha-input" type="number" placeholder="ВВЕДИТЕ КОД"/><span>*</span>
+                                <div class="capcha">kjkbl</div>
+                                <button class="capcha-reload" type="button"><img src="img/reload-icon.png" height="13" width="12" alt="reload-icon"/></button>
+                            </div>
+                            <button class="form-submit" type="submit">отправить</button>
+                        </form>
+                    </div>
+                </section>
+                <section class="cadrs-wrapper">
+                    <header class="tab-div-header">
+                        <span>Кадры из фильма</span>
+                    </header>
+                </section>
+                <section class="trailer-wrapper">
+                    <header class="tab-div-header">
+                        <span>Трейлер</span>
+                    </header>
+                </section>
+                <section class="description-wrapper">
+                    <header class="tab-div-header">
+                        <span>Описание</span>
+                    </header>
+                </section>
+            </section>
+            <section class="poster-menu">
+                <header class="poster-menu-header">
+                    <h3>Похожие фильмы</h3>
+                </header>
+                <ul>
+                    <li>
+                        <div class="poster-menu-wrapper">
+                            <a href="#">
+                                <h2>Ной</h2>
+                                <img class="poster-menu-img" src="img/poster-menu-noi.png" height="269" width="193"
+                                     alt="poster-noi"/>
+                            </a>
+                            <div class="rating">
+                                <img class="rating-stars" src="img/5stars.png" height="16" width="100" alt="5stars"/>
+                            </div>
+                        </div>
+                        <div class="poster-menu-hover">
+                            <a href="#">
+                                <h2>Ной</h2>
+                            </a>
+                            <div class="box-shadow-block">
+                                <a href="#">
+                                    <img class="poster-menu-img" src="img/poster-menu-noi.png" height="269" width="193"
+                                         alt="poster-noi"/>
+                                </a>
+                                <div class="rating">
+                                    <img class="rating-stars" src="img/5stars.png" height="16" width="100" alt="5stars"/>
+                                </div>
+                                <div class="poster-menu-hover-block">
+                                    <ul>
+                                        <li class="hover-elements">
+                                            <img src="img/admin-icon.png" height="12" width="11" alt="admin-icon"/>
+                                            <span class="orange">Админ</span>
+                                        </li>
+                                        <li class="hover-elements">
+                                            <img src="img/diagramma-icon.png" height="12" width="14" alt="diagramma-icon"/>
+                                            <span class="grey">2/5</span>
+                                        </li>
+                                        <li class="hover-elements">
+                                            <img src="img/comments-icon.png" height="11" width="14" alt="comments-icon"/>
+                                            <span class="orange">105</span>
+                                        </li>
+                                        <li class="hover-elements">
+                                            <img src="img/calendar-icon.png" height="14" width="13" alt="calendar-icon"/>
+                                            <span class="grey">21.03.2014</span>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="poster-menu-wrapper">
+                            <a href="#">
+                                <h2>Залётчики</h2>
+                                <img class="poster-menu-img" src="img/poster-menu-zalyotchiki.png" height="269" width="193"
+                                     alt="poster-zalyotchiki"/>
+                            </a>
+                            <div class="rating">
+                                <img class="rating-stars" src="img/2stars.png" height="16" width="100" alt="2stars"/>
+                            </div>
+                        </div>
+                        <div class="poster-menu-hover">
+                            <a href="#">
+                                <h2>Залётчики</h2>
+                            </a>
+                            <div class="box-shadow-block">
+                                <a href="#">
+                                    <img class="poster-menu-img" src="img/poster-menu-zalyotchiki.png" height="269" width="193"
+                                         alt="poster-zalyotchiki"/>
+                                </a>
+                                <div class="rating">
+                                    <img class="rating-stars" src="img/2stars.png" height="16" width="100" alt="2stars"/>
+                                </div>
+                                <div class="poster-menu-hover-block">
+                                    <ul>
+                                        <li class="hover-elements">
+                                            <img src="img/admin-icon.png" height="12" width="11" alt="admin-icon"/>
+                                            <span class="orange">Админ</span>
+                                        </li>
+                                        <li class="hover-elements">
+                                            <img src="img/diagramma-icon.png" height="12" width="14" alt="diagramma-icon"/>
+                                            <span class="grey">2/5</span>
+                                        </li>
+                                        <li class="hover-elements">
+                                            <img src="img/comments-icon.png" height="11" width="14" alt="comments-icon"/>
+                                            <span class="orange">105</span>
+                                        </li>
+                                        <li class="hover-elements">
+                                            <img src="img/calendar-icon.png" height="14" width="13" alt="calendar-icon"/>
+                                            <span class="grey">21.03.2014</span>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="poster-menu-wrapper">
+                            <a href="#">
+                                <h2>Трубач</h2>
+                                <img class="poster-menu-img" src="img/poster-menu-trubach.png" height="270" width="193"
+                                     alt="poster-trubach"/>
+                            </a>
+                            <div class="rating">
+                                <img class="rating-stars" src="img/2stars.png" height="16" width="100" alt="2stars"/>
+                            </div>
+                        </div>
+                        <div class="poster-menu-hover">
+                            <a href="#">
+                                <h2>Трубач</h2>
+                            </a>
+                            <div class="box-shadow-block">
+                                <a href="#">
+                                    <img class="poster-menu-img" src="img/poster-menu-trubach.png" height="270" width="193"
+                                         alt="poster-trubach"/>
+                                </a>
+                                <div class="rating">
+                                    <img class="rating-stars" src="img/2stars.png" height="16" width="100" alt="2stars"/>
+                                </div>
+                                <div class="poster-menu-hover-block">
+                                    <ul>
+                                        <li class="hover-elements">
+                                            <img src="img/admin-icon.png" height="12" width="11" alt="admin-icon"/>
+                                            <span class="orange">Админ</span>
+                                        </li>
+                                        <li class="hover-elements">
+                                            <img src="img/diagramma-icon.png" height="12" width="14" alt="diagramma-icon"/>
+                                            <span class="grey">2/5</span>
+                                        </li>
+                                        <li class="hover-elements">
+                                            <img src="img/comments-icon.png" height="11" width="14" alt="comments-icon"/>
+                                            <span class="orange">105</span>
+                                        </li>
+                                        <li class="hover-elements">
+                                            <img src="img/calendar-icon.png" height="14" width="13" alt="calendar-icon"/>
+                                            <span class="grey">21.03.2014</span>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="poster-menu-wrapper">
+                            <a href="#">
+                                <h2>Осколки</h2>
+                                <img class="poster-menu-img" src="img/poster-menu-razbitoe-na-oskolki.png"
+                                     height="269" width="193" alt="poster-razbitoe-na-oskolki"/>
+                            </a>
+                            <div class="rating">
+                                <img class="rating-stars" src="img/2stars.png" height="16" width="100" alt="2stars"/>
+                            </div>
+                        </div>
+                        <div class="poster-menu-hover">
+                            <a href="#">
+                                <h2>Осколки</h2>
+                            </a>
+                            <div class="box-shadow-block">
+                                <a href="#">
+                                    <img class="poster-menu-img" src="img/poster-menu-razbitoe-na-oskolki.png"
+                                         height="269" width="193" alt="poster-razbitoe-na-oskolki"/>
+                                </a>
+                                <div class="rating">
+                                    <img class="rating-stars" src="img/2stars.png" height="16" width="100" alt="2stars"/>
+                                </div>
+                                <div class="poster-menu-hover-block">
+                                    <ul>
+                                        <li class="hover-elements">
+                                            <img src="img/admin-icon.png" height="12" width="11" alt="admin-icon"/>
+                                            <span class="orange">Админ</span>
+                                        </li>
+                                        <li class="hover-elements">
+                                            <img src="img/diagramma-icon.png" height="12" width="14" alt="diagramma-icon"/>
+                                            <span class="grey">2/5</span>
+                                        </li>
+                                        <li class="hover-elements">
+                                            <img src="img/comments-icon.png" height="11" width="14" alt="comments-icon"/>
+                                            <span class="orange">105</span>
+                                        </li>
+                                        <li class="hover-elements">
+                                            <img src="img/calendar-icon.png" height="14" width="13" alt="calendar-icon"/>
+                                            <span class="grey">21.03.2014</span>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="poster-menu-wrapper">
+                            <a href="#">
+                                <h2>Ной</h2>
+                                <img class="poster-menu-img" src="img/poster-menu-noi.png" height="269" width="193"
+                                     alt="poster-noi"/>
+                            </a>
+                            <div class="rating">
+                                <img class="rating-stars" src="img/5stars.png" height="16" width="100" alt="5stars"/>
+                            </div>
+                        </div>
+                        <div class="poster-menu-hover">
+                            <a href="#">
+                                <h2>Ной</h2>
+                            </a>
+                            <div class="box-shadow-block">
+                                <a href="#">
+                                    <img class="poster-menu-img" src="img/poster-menu-noi.png" height="269" width="193"
+                                         alt="poster-noi"/>
+                                </a>
+                                <div class="rating">
+                                    <img class="rating-stars" src="img/5stars.png" height="16" width="100" alt="5stars"/>
+                                </div>
+                                <div class="poster-menu-hover-block">
+                                    <ul>
+                                        <li class="hover-elements">
+                                            <img src="img/admin-icon.png" height="12" width="11" alt="admin-icon"/>
+                                            <span class="orange">Админ</span>
+                                        </li>
+                                        <li class="hover-elements">
+                                            <img src="img/diagramma-icon.png" height="12" width="14" alt="diagramma-icon"/>
+                                            <span class="grey">2/5</span>
+                                        </li>
+                                        <li class="hover-elements">
+                                            <img src="img/comments-icon.png" height="11" width="14" alt="comments-icon"/>
+                                            <span class="orange">105</span>
+                                        </li>
+                                        <li class="hover-elements">
+                                            <img src="img/calendar-icon.png" height="14" width="13" alt="calendar-icon"/>
+                                            <span class="grey">21.03.2014</span>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="poster-menu-wrapper">
+                            <a href="#">
+                                <h2>Залётчики</h2>
+                                <img class="poster-menu-img" src="img/poster-menu-zalyotchiki.png" height="269" width="193"
+                                     alt="poster-zalyotchiki"/>
+                            </a>
+                            <div class="rating">
+                                <img class="rating-stars" src="img/2stars.png" height="16" width="100" alt="2stars"/>
+                            </div>
+                        </div>
+                        <div class="poster-menu-hover">
+                            <a href="#">
+                                <h2>Залётчики</h2>
+                            </a>
+                            <div class="box-shadow-block">
+                                <a href="#">
+                                    <img class="poster-menu-img" src="img/poster-menu-zalyotchiki.png" height="269" width="193"
+                                         alt="poster-zalyotchiki"/>
+                                </a>
+                                <div class="rating">
+                                    <img class="rating-stars" src="img/2stars.png" height="16" width="100" alt="2stars"/>
+                                </div>
+                                <div class="poster-menu-hover-block">
+                                    <ul>
+                                        <li class="hover-elements">
+                                            <img src="img/admin-icon.png" height="12" width="11" alt="admin-icon"/>
+                                            <span class="orange">Админ</span>
+                                        </li>
+                                        <li class="hover-elements">
+                                            <img src="img/diagramma-icon.png" height="12" width="14" alt="diagramma-icon"/>
+                                            <span class="grey">2/5</span>
+                                        </li>
+                                        <li class="hover-elements">
+                                            <img src="img/comments-icon.png" height="11" width="14" alt="comments-icon"/>
+                                            <span class="orange">105</span>
+                                        </li>
+                                        <li class="hover-elements">
+                                            <img src="img/calendar-icon.png" height="14" width="13" alt="calendar-icon"/>
+                                            <span class="grey">21.03.2014</span>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="poster-menu-wrapper">
+                            <a href="#">
+                                <h2>Трубач</h2>
+                                <img class="poster-menu-img" src="img/poster-menu-trubach.png" height="270" width="193"
+                                     alt="poster-trubach"/>
+                            </a>
+                            <div class="rating">
+                                <img class="rating-stars" src="img/2stars.png" height="16" width="100" alt="2stars"/>
+                            </div>
+                        </div>
+                        <div class="poster-menu-hover">
+                            <a href="#">
+                                <h2>Трубач</h2>
+                            </a>
+                            <div class="box-shadow-block">
+                                <a href="#">
+                                    <img class="poster-menu-img" src="img/poster-menu-trubach.png" height="270" width="193"
+                                         alt="poster-trubach"/>
+                                </a>
+                                <div class="rating">
+                                    <img class="rating-stars" src="img/2stars.png" height="16" width="100" alt="2stars"/>
+                                </div>
+                                <div class="poster-menu-hover-block">
+                                    <ul>
+                                        <li class="hover-elements">
+                                            <img src="img/admin-icon.png" height="12" width="11" alt="admin-icon"/>
+                                            <span class="orange">Админ</span>
+                                        </li>
+                                        <li class="hover-elements">
+                                            <img src="img/diagramma-icon.png" height="12" width="14" alt="diagramma-icon"/>
+                                            <span class="grey">2/5</span>
+                                        </li>
+                                        <li class="hover-elements">
+                                            <img src="img/comments-icon.png" height="11" width="14" alt="comments-icon"/>
+                                            <span class="orange">105</span>
+                                        </li>
+                                        <li class="hover-elements">
+                                            <img src="img/calendar-icon.png" height="14" width="13" alt="calendar-icon"/>
+                                            <span class="grey">21.03.2014</span>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="poster-menu-wrapper">
+                            <a href="#">
+                                <h2>Осколки</h2>
+                                <img class="poster-menu-img" src="img/poster-menu-razbitoe-na-oskolki.png"
+                                     height="269" width="193" alt="poster-razbitoe-na-oskolki"/>
+                            </a>
+                            <div class="rating">
+                                <img class="rating-stars" src="img/2stars.png" height="16" width="100" alt="2stars"/>
+                            </div>
+                        </div>
+                        <div class="poster-menu-hover">
+                            <a href="#">
+                                <h2>Осколки</h2>
+                            </a>
+                            <div class="box-shadow-block">
+                                <a href="#">
+                                    <img class="poster-menu-img" src="img/poster-menu-razbitoe-na-oskolki.png"
+                                         height="269" width="193" alt="poster-razbitoe-na-oskolki"/>
+                                </a>
+                                <div class="rating">
+                                    <img class="rating-stars" src="img/2stars.png" height="16" width="100" alt="2stars"/>
+                                </div>
+                                <div class="poster-menu-hover-block">
+                                    <ul>
+                                        <li class="hover-elements">
+                                            <img src="img/admin-icon.png" height="12" width="11" alt="admin-icon"/>
+                                            <span class="orange">Админ</span>
+                                        </li>
+                                        <li class="hover-elements">
+                                            <img src="img/diagramma-icon.png" height="12" width="14" alt="diagramma-icon"/>
+                                            <span class="grey">2/5</span>
+                                        </li>
+                                        <li class="hover-elements">
+                                            <img src="img/comments-icon.png" height="11" width="14" alt="comments-icon"/>
+                                            <span class="orange">105</span>
+                                        </li>
+                                        <li class="hover-elements">
+                                            <img src="img/calendar-icon.png" height="14" width="13" alt="calendar-icon"/>
+                                            <span class="grey">21.03.2014</span>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="poster-menu-wrapper">
+                            <a href="#">
+                                <h2>Ной</h2>
+                                <img class="poster-menu-img" src="img/poster-menu-noi.png" height="269" width="193"
+                                     alt="poster-noi"/>
+                            </a>
+                            <div class="rating">
+                                <img class="rating-stars" src="img/5stars.png" height="16" width="100" alt="5stars"/>
+                            </div>
+                        </div>
+                        <div class="poster-menu-hover">
+                            <a href="#">
+                                <h2>Ной</h2>
+                            </a>
+                            <div class="box-shadow-block">
+                                <a href="#">
+                                    <img class="poster-menu-img" src="img/poster-menu-noi.png" height="269" width="193"
+                                         alt="poster-noi"/>
+                                </a>
+                                <div class="rating">
+                                    <img class="rating-stars" src="img/5stars.png" height="16" width="100" alt="5stars"/>
+                                </div>
+                                <div class="poster-menu-hover-block">
+                                    <ul>
+                                        <li class="hover-elements">
+                                            <img src="img/admin-icon.png" height="12" width="11" alt="admin-icon"/>
+                                            <span class="orange">Админ</span>
+                                        </li>
+                                        <li class="hover-elements">
+                                            <img src="img/diagramma-icon.png" height="12" width="14" alt="diagramma-icon"/>
+                                            <span class="grey">2/5</span>
+                                        </li>
+                                        <li class="hover-elements">
+                                            <img src="img/comments-icon.png" height="11" width="14" alt="comments-icon"/>
+                                            <span class="orange">105</span>
+                                        </li>
+                                        <li class="hover-elements">
+                                            <img src="img/calendar-icon.png" height="14" width="13" alt="calendar-icon"/>
+                                            <span class="grey">21.03.2014</span>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="poster-menu-wrapper">
+                            <a href="#">
+                                <h2>Залётчики</h2>
+                                <img class="poster-menu-img" src="img/poster-menu-zalyotchiki.png" height="269" width="193"
+                                     alt="poster-zalyotchiki"/>
+                            </a>
+                            <div class="rating">
+                                <img class="rating-stars" src="img/2stars.png" height="16" width="100" alt="2stars"/>
+                            </div>
+                        </div>
+                        <div class="poster-menu-hover">
+                            <a href="#">
+                                <h2>Залётчики</h2>
+                            </a>
+                            <div class="box-shadow-block">
+                                <a href="#">
+                                    <img class="poster-menu-img" src="img/poster-menu-zalyotchiki.png" height="269" width="193"
+                                         alt="poster-zalyotchiki"/>
+                                </a>
+                                <div class="rating">
+                                    <img class="rating-stars" src="img/2stars.png" height="16" width="100" alt="2stars"/>
+                                </div>
+                                <div class="poster-menu-hover-block">
+                                    <ul>
+                                        <li class="hover-elements">
+                                            <img src="img/admin-icon.png" height="12" width="11" alt="admin-icon"/>
+                                            <span class="orange">Админ</span>
+                                        </li>
+                                        <li class="hover-elements">
+                                            <img src="img/diagramma-icon.png" height="12" width="14" alt="diagramma-icon"/>
+                                            <span class="grey">2/5</span>
+                                        </li>
+                                        <li class="hover-elements">
+                                            <img src="img/comments-icon.png" height="11" width="14" alt="comments-icon"/>
+                                            <span class="orange">105</span>
+                                        </li>
+                                        <li class="hover-elements">
+                                            <img src="img/calendar-icon.png" height="14" width="13" alt="calendar-icon"/>
+                                            <span class="grey">21.03.2014</span>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="poster-menu-wrapper">
+                            <a href="#">
+                                <h2>Трубач</h2>
+                                <img class="poster-menu-img" src="img/poster-menu-trubach.png" height="270" width="193"
+                                     alt="poster-trubach"/>
+                            </a>
+                            <div class="rating">
+                                <img class="rating-stars" src="img/2stars.png" height="16" width="100" alt="2stars"/>
+                            </div>
+                        </div>
+                        <div class="poster-menu-hover">
+                            <a href="#">
+                                <h2>Трубач</h2>
+                            </a>
+                            <div class="box-shadow-block">
+                                <a href="#">
+                                    <img class="poster-menu-img" src="img/poster-menu-trubach.png" height="270" width="193"
+                                         alt="poster-trubach"/>
+                                </a>
+                                <div class="rating">
+                                    <img class="rating-stars" src="img/2stars.png" height="16" width="100" alt="2stars"/>
+                                </div>
+                                <div class="poster-menu-hover-block">
+                                    <ul>
+                                        <li class="hover-elements">
+                                            <img src="img/admin-icon.png" height="12" width="11" alt="admin-icon"/>
+                                            <span class="orange">Админ</span>
+                                        </li>
+                                        <li class="hover-elements">
+                                            <img src="img/diagramma-icon.png" height="12" width="14" alt="diagramma-icon"/>
+                                            <span class="grey">2/5</span>
+                                        </li>
+                                        <li class="hover-elements">
+                                            <img src="img/comments-icon.png" height="11" width="14" alt="comments-icon"/>
+                                            <span class="orange">105</span>
+                                        </li>
+                                        <li class="hover-elements">
+                                            <img src="img/calendar-icon.png" height="14" width="13" alt="calendar-icon"/>
+                                            <span class="grey">21.03.2014</span>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="poster-menu-wrapper">
+                            <a href="#">
+                                <h2>Осколки</h2>
+                                <img class="poster-menu-img" src="img/poster-menu-razbitoe-na-oskolki.png"
+                                     height="269" width="193" alt="poster-razbitoe-na-oskolki"/>
+                            </a>
+                            <div class="rating">
+                                <img class="rating-stars" src="img/2stars.png" height="16" width="100" alt="2stars"/>
+                            </div>
+                        </div>
+                        <div class="poster-menu-hover">
+                            <a href="#">
+                                <h2>Осколки</h2>
+                            </a>
+                            <div class="box-shadow-block">
+                                <a href="#">
+                                    <img class="poster-menu-img" src="img/poster-menu-razbitoe-na-oskolki.png"
+                                         height="269" width="193" alt="poster-razbitoe-na-oskolki"/>
+                                </a>
+                                <div class="rating">
+                                    <img class="rating-stars" src="img/2stars.png" height="16" width="100" alt="2stars"/>
+                                </div>
+                                <div class="poster-menu-hover-block">
+                                    <ul>
+                                        <li class="hover-elements">
+                                            <img src="img/admin-icon.png" height="12" width="11" alt="admin-icon"/>
+                                            <span class="orange">Админ</span>
+                                        </li>
+                                        <li class="hover-elements">
+                                            <img src="img/diagramma-icon.png" height="12" width="14" alt="diagramma-icon"/>
+                                            <span class="grey">2/5</span>
+                                        </li>
+                                        <li class="hover-elements">
+                                            <img src="img/comments-icon.png" height="11" width="14" alt="comments-icon"/>
+                                            <span class="orange">105</span>
+                                        </li>
+                                        <li class="hover-elements">
+                                            <img src="img/calendar-icon.png" height="14" width="13" alt="calendar-icon"/>
+                                            <span class="grey">21.03.2014</span>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+            </section>
+            <section class="pagination">
+                <ul>
+                    <li>
+                        <a href="#">
+                            <span class="pagination-item"><img src="img/prev-icon.png" height="10" width="7" alt="prev-icon"/></span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <span class="pagination-item">2</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <span id="page-active" class="pagination-item">3</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <span class="pagination-item">10</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <span class="pagination-item"><img src="img/next-icon.png" height="10" width="7" alt="next-icon"/></span>
+                        </a>
+                    </li>
+                </ul>
+            </section>
+        </section>
+    </section>
+    <footer class="footer">
+        <address>Testmarkup2</address>
+    </footer>
+</div>
+<script src="js/lib/jquery-2.1.3.min.js"></script>
+<script src="js/main.js"></script>
+</body>
+</html>

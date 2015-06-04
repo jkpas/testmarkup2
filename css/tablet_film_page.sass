@@ -1,0 +1,100 @@
+@media (max-width: 800px)
+  .wrapper
+    width: 90%
+    max-width: 800px
+    margin: 0 auto
+    position: relative
+
+  .header
+    height: 130px
+    padding: 10px 3px 0 3px
+    width: 100%
+    .logo
+      position: absolute
+      top: 20px
+      left: 0
+    .breadcrumbs
+      margin: 80px 0 0 2%
+      padding: 0 10px
+    .registration
+      margin: 80px 2% 0 0
+
+  aside
+    height: auto
+    width: 100%
+    @include bord-rad(7px)
+    -webkit-box-shadow: none
+    -moz-box-shadow: none
+    box-shadow: none
+    float: none
+    position: static
+    overflow: hidden
+    padding-bottom: 20px
+    margin-bottom: 10px
+    .search
+      width: 30%
+      padding: 8px 2% 0 2%
+    .main-navigation
+      padding-top: 20px
+      li
+        width: 24%
+
+
+  .content
+    width: 100%
+    height: auto
+    margin-left: 0
+    position: static
+    -webkit-box-shadow: none
+    -moz-box-shadow: none
+    box-shadow: none
+    @include bord-rad(7px)
+    border: 3px solid #5b5b5b
+    .film-info-and-comments
+      .film-info
+        overflow: hidden
+        .film-description
+          dl
+            .actors
+              text-align: left
+              height: auto
+              border-bottom: none
+    .pagination
+      height: auto
+      padding: 40px 0
+      width: auto
+
+  .footer
+    height: 65px
+    width: 100%
+    margin-top: 53px
+    padding: 0 20px
+
+@media (max-width: 914px)
+  .content
+    .film-info-and-comments
+      .film-info
+        .film-menu
+          margin: 25px 0 0 0
+          text-align: center
+          li
+            padding: 20px 15px 0 15px
+            position: relative
+          li:after
+            content: ""
+            margin: 0
+          li:first-child
+            padding: 20px 15px 0 15px
+          li:last-child
+            padding: 20px 15px 0 15px
+          li:last-child:after
+            content: ""
+            margin: 0
+      .comments-wrapper
+        .add-cooments
+          form
+            width: 80%
+
+
+
+

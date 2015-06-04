@@ -1,0 +1,885 @@
+h1, h2, h3, dl, dd, p, ul, fieldset, input
+  padding: 0
+  margin: 0
+  -webkit-margin-before: 0
+  -webkit-margin-after: 0
+  -webkit-margin-start: 0
+  -webkit-padding-start: 0
+
+
+@mixin bord-rad ($br)
+  -webkit-border-radius: $br
+  -moz-border-radius: $br
+  border-radius: $br
+
+ul
+  list-style: none
+
+*
+  -webkit-box-sizing: border-box
+  -moz-box-sizing: border-box
+  box-sizing: border-box
+
+a
+  text-decoration: none
+
+@mixin bord-rad ($br)
+  -webkit-border-radius: $br
+  -moz-border-radius: $br
+  border-radius: $br
+
+body
+  width: 100%
+  background-image: url("../img/body-bg.png")
+  font-family: "Open Sans", sans-serif
+
+#active
+  border-bottom: 3px solid #d87620
+  a
+    color: #d87620
+
+
+.wrapper
+  width: 90%
+  max-width: 1193px
+  margin: 0 auto
+  position: relative
+
+.header
+  height: 100px
+  padding: 20px 3.1% 0 3px
+  .logo
+    float: left
+    width: 220px
+    a
+      text-decoration: none
+      img
+        float: left
+      h1
+        padding: 8px 0 0 20px
+        color: #626262
+        font-size: 30px
+        font-weight: 600
+        overflow: hidden
+  .breadcrumbs
+    float: left
+    margin: 40px 0 0 9.4%
+    padding: 0 10px
+    background-image: url("../img/elements-black-bg.png")
+    height:  40px
+    @include bord-rad (7px 7px 0 0)
+    li
+      height:  40px
+      display: inline-block
+      padding: 10px 31px 0 11px
+      overflow: hidden
+      position: relative
+      a
+        text-decoration: none
+        color: #d2d2d2
+        font-size: 13px
+        text-transform: uppercase
+    li:after
+      content: ">>"
+      color: #d2d2d2
+      position: absolute
+      right: 0
+    li:last-child
+      height:  40px
+      display: inline-block
+      padding: 10px 0 0 0
+      margin: 0 11px
+      a
+        text-decoration: none
+        color: #d2d2d2
+        font-size: 13px
+        text-transform: uppercase
+    li:last-child:after
+      content: ""
+      margin: 0
+    li:hover
+      a
+        color: #d87620
+  .registration
+    float: right
+    background-image: url("../img/elements-black-bg.png")
+    margin: 40px 2% 0 0
+    @include bord-rad (7px 7px 0 0)
+    li
+      height:  40px
+      display: inline-block
+      padding: 10px 15px 0 21px
+      position: relative
+      a
+        text-decoration: none
+        color: #d2d2d2
+        font-size: 13px
+        text-transform: uppercase
+    li:after
+      content: "|"
+      color: #484848
+      position: absolute
+      right: -3px
+    li:last-child
+      height:  40px
+      display: inline-block
+      padding: 10px 21px 0 8px
+      a
+        text-decoration: none
+        color: #d2d2d2
+        font-size: 13px
+        text-transform: uppercase
+    li:last-child:after
+      content: ""
+      margin: 0
+    li:hover
+      border-bottom: 3px solid #d87620
+      a
+        color: #d87620
+
+aside
+  width: 26.9%
+  padding-bottom: 30px
+  background-image: url("../img/sidebar-bg.png")
+  @include bord-rad(7px 0 0 7px)
+  -webkit-box-shadow: -4px 4px 32px 1px rgba(93,93,93,0.78)
+  -moz-box-shadow: -4px 4px 32px 1px rgba(93,93,93,0.78)
+  box-shadow: -4px 4px 32px 1px rgba(93,93,93,0.78)
+  float: left
+  .search
+    height: 36px
+    width: 86%
+    margin: 14px 0 0 19px
+    @include  bord-rad(4px)
+    border: 1px solid #ffffff
+    background-image: url("../img/body-bg.png")
+    padding: 8px 4.4% 0 5.3%
+    -webkit-box-shadow: inset 1px 3px 7px 2px rgba(168,168,168,1)
+    -moz-box-shadow: inset 1px 3px 7px 2px rgba(168,168,168,1)
+    box-shadow: inset 1px 3px 7px 2px rgba(168,168,168,1)
+    input
+      border: none
+      background-color: transparent
+      outline: none
+      font-size: 13px
+      color: #818181
+      font-weight: 600
+      width: 70%
+    .search-button
+      height: 14px
+      width: 14px
+      border: none
+      background-image: url("../img/search.png")
+      float: right
+      background-color: transparent
+      outline: none
+      margin-top: 3px
+  .sidebar-filter
+    margin-top: 14px
+    min-height: 63px
+    background-image: url("../img/elements-black-bg.png")
+    border-bottom: 3px solid #000000
+    li
+      height:  60px
+      display: inline-block
+      padding: 15px 16px 0 4px
+      overflow: hidden
+      position: relative
+      a
+        text-decoration: none
+        color: #b0b0b0
+        font-size: 13px
+        text-transform: uppercase
+        font-weight: 600
+    li:after
+      content: "|"
+      color: #d2d2d2
+      position: absolute
+      right: 0
+    li:first-child
+      height:  60px
+      display: inline-block
+      padding: 15px 16px 0 20px
+      a
+        text-decoration: none
+        color: #b0b0b0
+        font-size: 13px
+        text-transform: uppercase
+        font-weight: 600
+      li:first-child:after
+        content: "|"
+        color: #d2d2d2
+        position: absolute
+        right: 0
+    li:last-child
+      height:  60px
+      display: inline-block
+      padding: 15px 20px 0 4px
+      a
+        text-decoration: none
+        color: #b0b0b0
+        font-size: 13px
+        text-transform: uppercase
+        font-weight: 600
+    li:last-child:after
+      content: ""
+      margin: 0
+    li:hover
+      a
+        color: #d87620
+    .active-sidebar-filter
+      border-bottom: 3px solid #d87620
+      a
+        color: #d87620
+  .main-navigation
+    li
+      width: 49%
+      min-width: 140px
+      height: 40px
+      display: inline-block
+      padding: 7px 0 0 21px
+      a
+        text-decoration: none
+        font-size: 13px
+        color: #f4f4f4
+    li:hover
+      a
+        color: #d87620
+    .nav-active
+      border-left: 3px solid #d87620
+      background-image: url("../img/elements-black-bg.png")
+      a
+        color: #d87620
+
+.content
+  width: 73.7%
+  margin-left: 26.3%
+  position: relative
+  -webkit-box-shadow: 7px 4px 32px 1px rgba(93,93,93,0.78)
+  -moz-box-shadow: 7px 4px 32px 1px rgba(93,93,93,0.78)
+  box-shadow: 7px 4px 32px 1px rgba(93,93,93,0.78)
+  background-color: #f5f5f5
+  @include bord-rad(7px)
+  border-top: 0 solid #5b5b5b
+  border-right: 3px solid #5b5b5b
+  border-bottom: 4px solid #5b5b5b
+  border-left: 3px solid #5b5b5b
+  .content-header
+    height: 63px
+    border-bottom: 1px solid #e5e5e5
+    color: #626262
+    padding: 20px 0 0 21px
+    h2
+      font-size: 18px
+      font-weight: 600
+      color: #626262
+  .video
+    padding: 21px
+    border-top: 1px solid #ffffff
+    border-bottom: 1px solid #e5e5e5
+    .videowrapper
+      position: relative
+      padding-bottom: 56.25%
+      padding-top: 25px
+      height: 0
+      iframe
+        position: absolute
+        top: 0
+        left: 0
+        width: 100%
+        height: 100%
+  .film-info-and-comments
+    border-top: 1px solid #ffffff
+    border-bottom: 1px solid #e5e5e5
+    padding: 21px
+    .film-info
+      overflow: hidden
+      .main-poster
+        float: left
+        width: 29.7%
+        .main-poster-img
+          margin-bottom: 13px
+          width: 100%
+          height: auto
+        .stars-img-wrapper
+          width: 62.5%
+          margin: 0 auto 15px
+          .stars-img
+            width: 100%
+            height: auto
+        .rating
+          width: 130px
+          margin: 0 auto
+          span
+            font-size: 16px
+            color: #626262
+            padding-left: 8px
+      .film-description
+        overflow: hidden
+        padding-left: 23px
+        .film-description-header
+          height: 35px
+          h2
+            font-size: 18px
+            font-weight: 600
+            color: #626262
+        dl
+          font-size: 13px
+          color: #626262
+          line-height: 21px
+          dt
+            border-top: 1px solid #e5e5e5
+            padding: 10px 0
+            width: 125px
+            float: left
+            padding-left: 4px
+            position: relative
+          dt:before
+            content: ""
+            position: absolute
+            top: 0
+            left: 0
+            right: 0
+            width: 100%
+            height: 1px
+            border-bottom: 1px solid #ffffff
+          dd
+            border-top: 1px solid #e5e5e5
+            padding: 10px 0
+            overflow: hidden
+            text-align: right
+            position: relative
+          dd:before
+            content: ""
+            position: absolute
+            top: 0
+            left: 0
+            right: 0
+            width: 100%
+            height: 1px
+            border-bottom: 1px solid #ffffff
+          .actors
+            text-align: justify
+
+      .film-menu
+        overflow: hidden
+        float: right
+        background-image: url("../img/elements-black-bg.png")
+        margin: 25px 0 0 0
+        @include bord-rad (7px 7px 0 0)
+        .active-film-menu
+          border-bottom: 3px solid #d87620
+          color: #d87620
+        li
+          height:  61px
+          display: inline-block
+          padding: 20px 15px 0 11px
+          position: relative
+          text-decoration: none
+          color: #d2d2d2
+          font-size: 13px
+          text-transform: uppercase
+        li:after
+          content: "|"
+          color: #484848
+          position: absolute
+          right: -3px
+        li:first-child
+          height:  61px
+          display: inline-block
+          padding: 20px 15px 0 21px
+          text-decoration: none
+          color: #d2d2d2
+          font-size: 13px
+          text-transform: uppercase
+        li:last-child
+          height:  61px
+          display: inline-block
+          padding: 20px 21px 0 8px
+          text-decoration: none
+          color: #d2d2d2
+          font-size: 13px
+          text-transform: uppercase
+        li:last-child:after
+          content: ""
+          margin: 0
+        li:hover
+          color: #d87620
+          cursor: pointer
+
+    .comments-wrapper
+      background-image: url("../img/comments-bg.png")
+      @include bord-rad(4px)
+      padding: 15px 0 23px
+      overflow: hidden
+      .comments
+        padding: 0 43px 0 21px
+        .tab-div-header
+          height: 27px
+          padding-left: 4px
+          color: #f2f2f2
+          font-size: 13px
+          border-bottom: 1px solid #ffffff
+        .comment
+          margin: 41px 0 0 22px
+          padding: 0 0 21px 40px
+          border-left: 1px solid #ffffff
+          border-bottom: 1px solid #ffffff
+          position: relative
+          .commentator-photo
+            position: absolute
+            left: -23px
+          .commentator-name
+            color: #e67e22
+            padding-right: 16px
+          span
+            color: #e67e22
+            display: block
+            overflow: hidden
+            img
+              margin-right: 6px
+          .comment-date
+            margin-top: 23px
+            color: #ffffff
+            font-size: 13px
+          .comment-text
+            margin-top: 18px
+            color: #ffffff
+            font-size: 13px
+            line-height: 21px
+            text-align: justify
+        .comment-answer
+          margin: 0 0 0 22px
+          padding: 0 0 21px 0
+          position: relative
+          .line-to-photo
+            height: 66px
+            width: 45px
+            border-left: 1px solid #ffffff
+            border-bottom: 1px solid #ffffff
+            float: left
+            .comment-answer-icon
+              position: absolute
+              top: -10px
+              left: -8px
+          .commentator-photo
+            position: absolute
+            left: 38px
+            top: 45px
+          .comment-wrapper
+            overflow: hidden
+            margin-left: 102px
+            padding-top: 41px
+            .commentator-name
+              color: #e67e22
+              padding-right: 16px
+            span
+              color: #e67e22
+              display: block
+              overflow: hidden
+              img
+                margin-right: 6px
+            .comment-date
+              margin-top: 23px
+              color: #ffffff
+              font-size: 13px
+            .comment-text
+              margin-top: 18px
+              color: #ffffff
+              font-size: 13px
+              line-height: 21px
+              text-align: justify
+        .single
+          border: none
+      .add-cooments
+        .add-comments-header
+          height: 47px
+          padding: 0 0 0 21px
+          -webkit-box-shadow: 0px 1px 10px 0px rgba(79,79,79,1)
+          -moz-box-shadow: 0px 1px 10px 0px rgba(79,79,79,1)
+          box-shadow: 0px 1px 10px 0px rgba(79,79,79,1)
+          h4
+            color: #ffffff
+            font-size: 13px
+            text-transform: uppercase
+            display: inline-block
+            padding-right: 10px
+        p
+          margin: 14px 0 0 24px
+          color: #ffffff
+          font-size: 13px
+          font-weight: 600
+          span
+            color: #d13d3d
+            padding-left: 2px
+        form
+          margin: 21px 0 0 21px
+          width: 58%
+          position: relative
+          input
+            width: 54%
+            height: 36px
+            margin-bottom: 20px
+            @include  bord-rad(4px)
+            border: 1px solid #ffffff
+            background-image: url("../img/body-bg.png")
+            padding: 3px 13px 0 35px
+            -webkit-box-shadow: inset 1px 3px 7px 2px rgba(168,168,168,1)
+            -moz-box-shadow: inset 1px 3px 7px 2px rgba(168,168,168,1)
+            box-shadow: inset 1px 3px 7px 2px rgba(168,168,168,1)
+            outline: none
+            font-size: 13px
+            color: #818181
+            font-weight: 600
+          span
+            color: #d13d3d
+            padding: 15px 0 0 10px
+          textarea
+            width: 93%
+            height: 172px
+            margin-bottom: 20px
+            @include  bord-rad(4px)
+            border: 1px solid #ffffff
+            background-image: url("../img/body-bg.png")
+            padding: 15px 13px 0 35px
+            -webkit-box-shadow: inset 1px 3px 7px 2px rgba(168,168,168,1)
+            -moz-box-shadow: inset 1px 3px 7px 2px rgba(168,168,168,1)
+            box-shadow: inset 1px 3px 7px 2px rgba(168,168,168,1)
+            outline: none
+            font-size: 13px
+            color: #818181
+            font-weight: 600
+            resize: none
+          .textaria-star
+            margin: 78px 15px 0 0
+            padding: 0
+            float: right
+          .user-icon
+            position: absolute
+            top: 13px
+            left: 18px
+          .email-icon
+            position: absolute
+            top: 70px
+            left: 16px
+          .comment-icon
+            position: absolute
+            top: 131px
+            left: 16px
+          .capcha-input
+            width: 138px
+            padding-left: 17px
+          input::-webkit-inner-spin-button
+            -webkit-appearance: none
+            margin: 0px
+          input::-webkit-outer-spin-button
+            -webkit-appearance: none
+            margin: 0px
+          input[type=number]
+            -moz-appearance: textfield
+          .capcha
+            width: 70px
+            height: 36px
+            @include bord-rad(4px)
+            background-color: #c7e5e2
+            color: #000000
+            font-size: 16px
+            display: inline-block
+            padding: 5px 0 0 14px
+            margin-right: 16px
+          .capcha-reload
+            height: 30px
+            width: 33px
+            background-color: #e67e22
+            text-align: center
+            padding-top: 1px
+            border: none
+            @include bord-rad(4px)
+            margin-top: 8px
+          .form-submit
+            height: 30px
+            width: 138px
+            background-color: #e67e22
+            text-align: center
+            padding-top: 1px
+            border: none
+            @include bord-rad(4px)
+            color: #ffffff
+            font-size: 13px
+            font-weight: 600
+            text-transform: uppercase
+    .cadrs-wrapper
+      display: none
+      min-height: 300px
+      background-image: url("../img/comments-bg.png")
+      @include bord-rad(4px)
+      padding: 15px 43px 23px 21px
+      overflow: hidden
+      .tab-div-header
+        height: 27px
+        padding-left: 4px
+        color: #f2f2f2
+        font-size: 13px
+        border-bottom: 1px solid #ffffff
+    .trailer-wrapper
+      display: none
+      min-height: 300px
+      background-image: url("../img/comments-bg.png")
+      @include bord-rad(4px)
+      padding: 15px 43px 23px 21px
+      overflow: hidden
+      .tab-div-header
+        height: 27px
+        padding-left: 4px
+        color: #f2f2f2
+        font-size: 13px
+        border-bottom: 1px solid #ffffff
+    .description-wrapper
+      display: none
+      min-height: 300px
+      background-image: url("../img/comments-bg.png")
+      @include bord-rad(4px)
+      padding: 15px 43px 23px 21px
+      overflow: hidden
+      .tab-div-header
+        height: 27px
+        padding-left: 4px
+        color: #f2f2f2
+        font-size: 13px
+        border-bottom: 1px solid #ffffff
+
+  .poster-menu
+    padding: 0 10px 50px
+    border-top: 1px solid #ffffff
+    border-bottom: 1px solid #e5e5e5
+    overflow: hidden
+    .poster-menu-header
+      height: 58px
+      padding: 15px 0 0 21px
+      border-bottom: 1px solid #e5e5e5
+      h3
+        font-size: 18px
+        font-weight: 600
+        color: #626262
+    ul
+      font-size: 0
+      li
+        width: 23%
+        display: inline-block
+        margin: 0 1%
+        margin-bottom: 45px
+        vertical-align: top
+        h2
+          font-size: 13px
+          font-weight: 600
+          color: #e67e22
+          margin-bottom: 10px
+        h2:hover
+          text-decoration: underline
+        .poster-menu-img
+          width: 100%
+          height: auto
+        .rating
+          width: 62.5%
+          overflow: hidden
+          margin: 7px auto 0
+          .rating-stars
+            width: 100%
+            height: auto
+        .poster-menu-hover
+          display: none
+          background-color: #f5f5f5
+          @include bord-rad(5px)
+          h2
+            font-size: 13px
+            font-weight: 600
+            color: #e67e22
+            margin-bottom: 10px
+          h2:hover
+            text-decoration: underline
+          .box-shadow-block
+            @include bord-rad(7px)
+            -webkit-box-shadow: 0px -2px 13px 1px rgba(187,187,187,1)
+            -moz-box-shadow: 0px -2px 13px 1px rgba(187,187,187,1)
+            box-shadow: 0px -2px 13px 1px rgba(187,187,187,1)
+            width: 100%
+            .poster-menu-img-wrapper
+              width: 100%
+              display: block
+              .poster-menu-img
+                width: 100%
+                height: auto
+            .rating
+              width: 62.5%
+              overflow: hidden
+              margin: 7px auto 0
+              height: 32px
+              border-bottom: 1px solid #e5e5e5
+              .rating-stars
+                width: 100%
+                height: auto
+            .poster-menu-hover-block
+              height: 76px
+              padding: 14px 0 18px 15px
+              border-top: 1px solid #ffffff
+              .hover-elements
+                display: inline-block
+                width: 50%
+                margin: 0 0 14px 0
+                padding: 0
+                span
+                  font-size: 12px
+                  color: #e67e22
+                  padding-left: 5px
+                .orange
+                  color: #e67e22
+                .grey
+                  color: #788088
+      li:hover .poster-menu-hover
+        display: block
+        position: absolute
+      li:hover
+        width: 23%
+        position: relative
+      li:hover .poster-menu-wrapper
+        display: none
+  .pagination
+    height: 108px
+    padding-top: 45px
+    border-top: 1px solid #ffffff
+    ul
+      margin: 0 auto
+      width: 320px
+      li
+        display: inline-block
+        vertical-align: top
+        position: relative
+        .pagination-item
+          display: block
+          margin: 6px 6px 0
+          height: 33px
+          width: 33px
+          @include bord-rad(50%)
+          background-color: #6d6d6d
+          font-size: 13px
+          font-weight: 600
+          color: #ffffff
+          text-align: center
+          padding-top: 7px
+        .pagination-item:hover
+          background-color: #e67e22
+#page-active
+  height: 43px
+  width: 43px
+  margin: 0 52px 0 6px
+  background-image: url("../img/body-bg.png")
+  font-size: 15px
+  font-weight: 600
+  color: #6d6d6d
+  padding-top: 12px
+  &:after
+    content: "..."
+    position: absolute
+    left: 72px
+    bottom: 12px
+
+.footer
+  height: 65px
+  font-family: Arial, sans-serif
+  font-size: 12px
+  color: #6d6d6d
+  margin-top: 53px
+  .footer-top
+    overflow: hidden
+    .kinoby-copyright
+      float: left
+      font-style: normal
+    p
+      float: right
+      a
+        text-decoration: none
+        color: #6d6d6d
+        &:hover
+          text-decoration: underline
+  .ucoz-copyright
+    float: right
+    margin-top: 10px
+    font-style: normal
+
+@media (max-width: 980px)
+  .content
+    .poster-menu
+      ul
+        li
+          h2
+            font-size: 10px
+          .poster-menu-hover
+            h2
+              font-size: 10px
+            .box-shadow-block
+              .poster-menu-hover-block
+                padding: 14px 0 18px 0
+                .hover-elements
+                  width: 50%
+                  padding: 0 5px
+                  margin: 0 0 10px 0
+                  span
+                    font-size: 8px
+                    padding-left: 5px
+
+@media (max-width: 1162px)
+  .content
+    .poster-menu
+      ul
+        li
+          .poster-menu-hover
+            .box-shadow-block
+              .poster-menu-hover-block
+                padding: 14px 0 18px 0
+                .hover-elements
+                  width: 50%
+                  padding: 0 5px
+                  margin: 0 0 10px 0
+                  span
+                    font-size: 8px
+                    padding-left: 5px
+
+@media (max-width: 1333px)
+  aside
+    .sidebar-filter
+      padding: 10px 10px 0 10px
+      li
+        height:  30px
+        padding: 0 10px
+        width: 100%
+      li:after
+        content: ""
+        margin: 0
+      li:first-child
+        height:  30px
+        padding: 0 10px
+      li:first-child:after
+        content: ""
+        margin: 0
+      li:last-child
+        height:  30px
+        padding: 0 10px
+      li:last-child:after
+        content: ""
+        margin: 0
+
+@import tablet_film_page.sass
+@import mobile.sass
+
+
+
+
+
+
+
+
+
+
+
+
+
